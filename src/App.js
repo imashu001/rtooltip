@@ -11,11 +11,6 @@ class App extends React.Component {
     };
   }
   togglettip = (e) => {
-    if (this.state.position === "") {
-      this.setState({
-        position: "top",
-      });
-    }
     this.setState({
       showTtip: !this.state.showTtip,
     });
@@ -38,7 +33,6 @@ class App extends React.Component {
           value={this.state.position}
           placeholder="Position"
         />
-        <br />
         <br />
         <p> Current position of tooltip is {this.state.position}</p>
         <div
